@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(8, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  place-content: center;
+  margin: 100px auto;
+  width: 411px;
+  height: 411px;
+  background-color: transparent;
+  border: 5px solid black;
+}
+.piece {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+.blackbox {
+  background-color: grey;
+}
+.whitebox {
+  background-color: white;
+}
+.activeBox {
+  background-color: orange;
+  transition: all 0.5s linear;
+}
+.possiblesqr {
+  cursor: pointer;
+}
+.possible-sqr-icon {
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
